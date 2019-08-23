@@ -9,7 +9,7 @@
     @name = name
     @@all << self#***
   end
-def songs
+    def songs
     Song.all.select do |song|
       song.genre == self
     end
